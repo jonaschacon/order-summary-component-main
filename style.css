@@ -1,16 +1,9 @@
 @charset "UTF-8";
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 1rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: var(--font1), sans-serif;
-}
 
 :root {
     --pale-blue: hsl(225, 100%, 94%);
@@ -22,13 +15,19 @@
     --font1: "Red Hat Display";
 }
 
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--font1), sans-serif;
+}
+
 body {
     display: flex;
     flex-direction: column;
-
     gap: 10px;
+
     background-color: var(--pale-blue);
-    font-size: 1rem;
     padding: 10px 12px;
     min-height: 100vh;    
 }
@@ -45,11 +44,6 @@ main {
     border-radius: 25px 25px 0px 0px;
 }
 
-p {
-    font-weight: 500;
-    color: var(--desaturated-blue);
-}
-
 .details-card {
     display: flex;
     flex-direction: column;
@@ -58,22 +52,40 @@ p {
     gap: 28px;
 }
 
+h1 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+p {
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+
+
 .plan {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
+    font-size: 0.9rem;
 }
 
 .plan a {
     flex-grow: 1;
 }
 
+.plan button {
+    font-size: 0.9rem;
+}
+
 button {
     border: none;
     border-radius: 14px;
-    padding: 20px;
+    padding: 15px;
     color: white;
     font-weight: bold;
     background-color: var(--bright-blue);
@@ -87,20 +99,8 @@ button {
     color: var(--dark-blue);
 }
 
-
-
-a {
-    font-weight: 700;
-    color: var(--desaturated-blue);
-}
-
-a:hover {
-    text-decoration: none;
-    color: var(--desaturated-blue);
-}
-
-h1 {
-    color: var(--dark-blue);
+.button:hover {
+    background-color: hsl(245, 75%, 62%);
 }
 
 .transparent {
@@ -117,17 +117,4 @@ h1 {
 
 .transparent:hover {
     color: var(--dark-blue);
-}
-
-.normal-button:hover {
-    background-color: hsl(245, 75%, 62%);
-}
-
-p {
-    font-size: 1rem;
-}
-
-h1 {
-    font-size: 1.4rem;
-    font-weight: 800;
 }
